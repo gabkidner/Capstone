@@ -60,5 +60,6 @@ ostream &operator <<(ostream & out, const Nim &game){
   for(int i = 0; i < bob; i++){
     out << "@";
   }
+  out << "\n " << game.stones << " Stones Remaining.";
   return out;
 }

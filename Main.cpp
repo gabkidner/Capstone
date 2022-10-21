@@ -9,21 +9,14 @@ void ttt();
 void nim();
 
 main(){//Only for navigating menu
-  int menu = -1;
-  system("cls");
-  do{
-    cout << "\ninput choice: \n";
-    cin >> menu;
-    if(menu == 1){
-      connect();
-    }
-    else if(menu == 2){
-      ttt();
-    }
-    else if(menu == 3){
-      nim();
-    }
-  }while(menu != 0);
+  Connect4 c5;
+  int choice;
+  while(!c5.won()){
+    cout << c5;
+    cin >> choice;
+    c5.place(choice);
+  }
+  cout << c5;
 }
 
 void connect(){//Connect 4 game
