@@ -12,10 +12,12 @@ main(){//Only for navigating menu
   Connect4 c5;
   int choice;
   while(!c5.won()){
+    system("cls");
     cout << c5;
     cin >> choice;
     c5.place(choice);
   }
+  system("cls");
   cout << c5;
 }
 

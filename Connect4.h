@@ -76,10 +76,10 @@ bool Connect4::won(){
     }
   }
   //Column check
-  /*for(int c = 0; c < 7; c++){
-    for(int i = 0; i < 5; i--){
-      if(grid[i][c] == color && grid[i-1][c] == color && grid[i-2][c] == color && grid[i-3][c]){
-        grid[0][1] = 'p';
+  for(int c = 0; c < 7; c++){
+    for(int i = 5; i > 0; i--){
+      if(grid[i][c] == color && grid[i-1][c] == color && grid[i-2][c] == color && grid[i-3][c] == color){
+        return true;
       }
     }
   }
