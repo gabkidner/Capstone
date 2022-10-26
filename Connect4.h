@@ -67,7 +67,42 @@ ostream &operator <<(ostream & out, const Connect4 &game){
 }
 
 bool Connect4::won(){
- for(int r = 0; r < 6; r++){
+  //[5][3]--[2][6]
+  if(grid[5][3] == color && grid[4][4] == color && grid[3][5] == color && grid[2][6]){
+    return true;
+  }
+  //[0][3] [3][0]
+  if(grid[0][3] == color && grid[1][2] == color && grid[2][1] == color && grid[3][0] == color){
+    return true;
+  }
+  //[0][3] -- [3][6]
+  if(grid[0][3] == color && grid[1][4] == color && grid[2][5] == color && grid[3][6] == color){
+    return true;
+  }
+  //Diagonal [2][0] -- [5][3]
+  if(grid[2][0] == color && grid[3][1] == color && grid[4][2] == color && grid[5][3] == color){
+    return true;
+  }
+  for(int i = 0; i < 3; i++){
+    int neg = 0 - i;
+    //[4][0] [3][1] [2][2] [1][3] [0][4]
+    if(grid[i][neg+4] == color && grid[i+1][neg+3] == color && grid[i+2][neg+2] == color && grid[i+3][neg+1] == color){
+      return true;
+    }
+    //Diagonal [5][2] -- [1][6]
+    if(grid[i+1][neg+6] == color && grid[i+2][neg+5] == color && grid[i+3][neg+4] == color && grid[i+4][neg+3] == color){
+      return true;
+    }
+    //Diagonal [5][1] -- [0][6]
+    if(grid[i][neg+6] == color && grid[i+1][neg+5] == color && grid[i+2][neg+4] == color && grid[i+3][neg+3] == color){
+      return true;
+    }
+    //Diagonal [5][0] [4][1] [3][2] [2][3] [1][4] [0][5]
+    if(grid[i][neg+5] == color && grid[i+1][neg+4] == color && grid[i+2][neg+3] && grid[i+3][neg+2] == color){
+      return true;
+    }
+  }
+  for(int r = 0; r < 6; r++){
     for(int i = 6; i > 2; i--){
       //Row Test
       if(grid[r][i] == color && grid[r][i-1] == color && grid[r][i-2] == color && grid[r][i-3] == color){
@@ -78,8 +113,14 @@ bool Connect4::won(){
             return true;
           }
           for(int i = 5; i > 3; i--){
+            //Diagonal [0][2] -- [4][6]
+            if(grid[i-1][i+1] == color && grid[i-2][i] == color && grid[i-3][i-1] == color && grid[i-4][i-2] == color){
+              return true;
+            }
             //Diagonal [1][0] --[5][4]
-            if(grid[i][i-1] == color && grid[i-1][i-2] == color && grid[i-2][i-3] == color && grid[i-3][i-4] == color)
+            if(grid[i][i-1] == color && grid[i-1][i-2] == color && grid[i-2][i-3] == color && grid[i-3][i-4] == color){
+              return true;
+            }
             //Diagonal [0][1] -- [5][6]
             if(grid[i][i+1] == color && grid[i-1][i] == color && grid[i-2][i-1] == color && grid[i-3][i-2] == color){
               return true;
@@ -93,37 +134,6 @@ bool Connect4::won(){
       }
     }
   }
-  //Column check
-  //diagonal
-
-  //for(int )
-  //diaganal
-  /*for(int i = 0; i <=2; i++){
-    if(grid[i][i] == color && grid[i+1][i+1] == color && grid[i+2][i+2] == color && grid[i+3][i+3] == color){
-      return true;
-    }
-  }
-  for(int i = 5; i >=3; i--){
-    if(grid[i][i+1] == color && grid[i-1][i] == color && grid[i-2][i-1] == color && grid[i-3][i-2] == color){
-      return true;
-    }
-    if(grid[i][i+2] == color && grid[i-1][i+1] == color && grid[i-2][i] == color && grid[i-3][i-1] == color){
-      return true;
-    }
-    if(grid[i][i+3] == color && grid[i-1][i+2] == color && grid[i-2][i+1] == color && grid[i-3][i] == color){
-      return true;
-    }
-  }
-  /*for(int i = 6; i >=5; i--){
-    if(grid[i-2][i] == color && grid[i-3][i-1] == color && grid[i-4][i-2] == color && grid[i-5][i-3] == color){
-      return true;
-    }
-  }
-  for(int i = 6; i>=5; i--){
-    if(grid[i][i-2] == color && grid[i-1][i-3] == color && grid[i-2][i-4] == color && grid[i-3][i-5] == color){
-      return true;
-    }
-  }*/
   return false;
 }
 
