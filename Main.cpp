@@ -2,11 +2,14 @@
 #include "Connect4.h"
 #include "TicTacToe.h"
 #include "Nim.h"
+#include "Simon.h"
 using namespace std;
 
 void connect(){//Connect 4 game
   int choice;
   Connect4 c4;
+  Simon s1;
+  cout << s1;
   while(!c4.won()){
     c4.switchPlayer();
     system("cls");
