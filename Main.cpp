@@ -5,11 +5,29 @@
 #include "Simon.h"
 using namespace std;
 
+void connect();
+void ttt();
+void nim();
+void sim();
+
+main(){//Only for navigating menu
+  int choice = 100;
+  do{
+    cout << "Menu:\n1 = Connect 4\n2 = TicTacToe\n3 = Nim\n4 = Simon Says";
+    cin >> choice;
+    switch(choice){
+      case 1: connect(); break;
+      case 2: ttt(); break;
+      case 3: nim(); break;
+      case 4: sim(); break;
+    }
+  }while(choice != 0);
+}
+
 void connect(){//Connect 4 game
   int choice;
   Connect4 c4;
-  Simon s1;
-  cout << s1;
+  cin >> choice;
   while(!c4.won()){
     c4.switchPlayer();
     system("cls");
@@ -62,15 +80,22 @@ void nim(){
   }
 }
 
-main(){//Only for navigating menu
-  int choice;
-  cout << "Menu:\n";
+void sim(){
+  int game = 0;
+  string choice;
+  Simon s;
   do{
-    cin >> choice;
-    switch(choice){
-      case 1: connect(); break;
-      case 2: ttt(); break;
-      case 3: nim(); break;
+    int loop = 50;
+    if(game != 0){
+      s.newPattern();
     }
-  }while(choice != 0);
+    while(loop != 0){
+      system("cls");
+      cout << s;
+      loop--;
+    }
+    system("cls");
+    cin >> choice;
+    game++;
+  }while(!s.done(choice));
 }
