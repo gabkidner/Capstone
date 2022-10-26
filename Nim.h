@@ -20,7 +20,7 @@ class Nim{
 Nim::Nim(){
   player1 = "Player 1";
   player2 = "Player 2";
-  stones = rand()%30 + 10;
+  stones = rand()%50 + 10;
   curPlayer = "Player 1";
 }
 

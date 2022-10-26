@@ -125,7 +125,7 @@ bool Connect4::won(){
             if(grid[i][i+1] == color && grid[i-1][i] == color && grid[i-2][i-1] == color && grid[i-3][i-2] == color){
               return true;
             }
-            //Collumn Test
+            //Collumn Testc <
             if(grid[i][c] == color && grid[i-1][c] == color && grid[i-2][c] == color && grid[i-3][c] == color){
               return true;
             }
@@ -133,6 +133,17 @@ bool Connect4::won(){
         }
       }
     }
+  }
+  int right = 0;
+  for(int c = 0; c < 7; c++){
+    for(int i = 5; i >= 0; i--){
+      if(grid[i][c] == color){
+        right++;
+      }
+    }
+  }
+  if(right == 4){
+    return true;
   }
   return false;
 }

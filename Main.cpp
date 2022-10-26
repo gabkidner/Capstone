@@ -4,23 +4,6 @@
 #include "Nim.h"
 using namespace std;
 
-void connect();
-void ttt();
-void nim();
-
-main(){//Only for navigating menu
-  Connect4 c5;
-  int choice;
-  while(!c5.won()){
-    system("cls");
-    cout << c5;
-    cin >> choice;
-    c5.place(choice);
-  }
-  system("cls");
-  cout << c5;
-}
-
 void connect(){//Connect 4 game
   int choice;
   Connect4 c4;
@@ -42,30 +25,49 @@ void connect(){//Connect 4 game
 }
 
 void ttt(){
-  int choice;
-  TicTacToe game;
-  while(!game.won()){
-    cout << "\n" << game.get();
+  char choice;
+  TicTacToe tic;
+  while(!tic.won()){
+    tic.switchPlayer();
     system("cls");
-    cout << game;
+    cout << tic;
     cin >> choice;
-    game.place(choice);
-    game.switchPlayer();
+    tic.place(choice);
   }
-  system("cls");
-  cout << game;
-  cout << game.get() << " has won" << endl;
 }
 
 void nim(){
-  int choice;
+  int choice, bad = 2;
   Nim game;
   while(!game.win()){
     do{
       system("cls");
+      if(bad = 0){
+        cout << "Invalid" << endl;
+        bad = 1;
+      }
       cout << game;
       cin >> choice;
+      if(game.isValid(choice)){
+        break;
+      }
+      else{
+        bad = 0;
+      }
     }while(!game.isValid(choice));
     game.take(choice);
   }
+}
+
+main(){//Only for navigating menu
+  int choice;
+  cout << "Menu:\n";
+  do{
+    cin >> choice;
+    switch(choice){
+      case 1: connect(); break;
+      case 2: ttt(); break;
+      case 3: nim(); break;
+    }
+  }while(choice != 0);
 }

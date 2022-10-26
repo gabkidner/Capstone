@@ -8,7 +8,7 @@ class TicTacToe{
   public:
     TicTacToe();
     void switchPlayer();
-    void place(int);
+    void place(char);
     bool won();
     char get();
     friend ostream &operator <<(ostream&, const TicTacToe &);
@@ -22,7 +22,7 @@ class TicTacToe{
 };
 
 TicTacToe::TicTacToe(){
-  player = X;
+  player = O;
 }
 
 void TicTacToe::switchPlayer(){
@@ -34,7 +34,7 @@ void TicTacToe::switchPlayer(){
   }
 }
 
-void TicTacToe::place(int choice){
+void TicTacToe::place(char choice){
   for(int r = 0; r < 3; r++){
     for(int c = 0; c < 3; c++){
       if(grid[r][c] == choice){
