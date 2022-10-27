@@ -1,25 +1,30 @@
 #include <iostream>
+#include <conio.h>
 #include "Connect4.h"
 #include "TicTacToe.h"
 #include "Nim.h"
 #include "Simon.h"
+#include "Twenty48.h"
 using namespace std;
 
 void connect();
 void ttt();
 void nim();
 void sim();
+void twenty();
 
 main(){//Only for navigating menu
   int choice = 100;
   do{
-    cout << "Menu:\n1 = Connect 4\n2 = TicTacToe\n3 = Nim\n4 = Simon Says";
+
+    cout << "Menu:\n1 = Connect 4\n2 = TicTacToe\n3 = Nim\n4 = Simon Says\n5 = 2048\n";
     cin >> choice;
     switch(choice){
       case 1: connect(); break;
       case 2: ttt(); break;
       case 3: nim(); break;
       case 4: sim(); break;
+      case 5: twenty(); break;
     }
   }while(choice != 0);
 }
@@ -98,4 +103,20 @@ void sim(){
     cin >> choice;
     game++;
   }while(!s.done(choice));
+}
+
+void twenty(){
+  Twenty48 game;
+  char input;
+  do{
+    system("cls");
+    cout << game;
+    input = getch();
+    int choice = game.charToInt(input);
+    game.move(choice);
+    while(!game.doneMoving(choice)){
+      game.move(choice);
+      cout << "print" << endl;
+    }
+  }while(input != 'l');
 }
