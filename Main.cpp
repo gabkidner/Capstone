@@ -5,6 +5,7 @@
 #include "Nim.h"
 #include "Simon.h"
 #include "Twenty48.h"
+#include "GuessNumber.h"
 using namespace std;
 
 void connect();
@@ -12,6 +13,7 @@ void ttt();
 void nim();
 void sim();
 void twenty();
+void guess();
 
 main(){//Only for navigating menu
   int choice = 100;
@@ -107,16 +109,21 @@ void sim(){
 
 void twenty(){
   Twenty48 game;
-  char input;
+  int input, inputt;
   do{
     system("cls");
-    cout << game;
-    input = getch();
-    int choice = game.charToInt(input);
-    game.move(choice);
-    while(!game.doneMoving(choice)){
-      game.move(choice);
-      cout << "print" << endl;
-    }
-  }while(input != 'l');
+    cout << game << "\n" << inputt;
+    inputt = getch();
+    input = game.realInput(inputt);
+    game.move(input);
+    game.addNums();
+  }while(!game.hasWon() && !game.hasLost());
+}
+
+void guess(){
+  GuessNumber game;
+  int user;
+  do{
+
+  }while(!correct())
 }
