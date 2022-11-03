@@ -9,18 +9,17 @@ class GuessNumber{
     bool correct(int);
     bool outOTries();
     int getNumber();
-    void add();
+    void add(int);
+    int get();
   private:
     int number;
-    int maxRounds;
     int rounds;
-}
+};
 
 GuessNumber::GuessNumber(){
   srand(time(NULL));
   number = rand() % 100 + 1;
   rounds = 0;
-  maxRounds = 15;
 }
 
 int GuessNumber::result(int user){
@@ -28,7 +27,7 @@ int GuessNumber::result(int user){
   if(user == number){
     return 1;
   }
-  else if(user != number && rounds == maxRounds){
+  else if(user != number && rounds == 15){
     return 0;
   }
   else if(user > number){
@@ -37,6 +36,7 @@ int GuessNumber::result(int user){
   else if(user < number){
     return 2;
   }
+  return -1;
 }
 
 int GuessNumber::getNumber(){

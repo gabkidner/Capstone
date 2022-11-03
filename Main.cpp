@@ -19,7 +19,7 @@ main(){//Only for navigating menu
   int choice = 100;
   do{
 
-    cout << "Menu:\n1 = Connect 4\n2 = TicTacToe\n3 = Nim\n4 = Simon Says\n5 = 2048\n";
+    cout << "Menu:\n1 = Connect 4\n2 = TicTacToe\n3 = Nim\n4 = Simon Says\n5 = 2048\n6 = Guess My NUmber\n7 = I Guess Your Number\n";
     cin >> choice;
     switch(choice){
       case 1: connect(); break;
@@ -27,6 +27,7 @@ main(){//Only for navigating menu
       case 3: nim(); break;
       case 4: sim(); break;
       case 5: twenty(); break;
+      case 6: guess(); break;
     }
   }while(choice != 0);
 }
@@ -122,8 +123,17 @@ void twenty(){
 
 void guess(){
   GuessNumber game;
-  int user;
+  int user, result;
   do{
-
-  }while(!correct())
+    cin >> user;
+    result = game.result(user);
+    game.add(user);
+    if(result == 3){
+      cout << "Lower" << endl;
+    }
+    else if(result == 2){
+      cout << "Higher" << endl;
+    }
+    cout << "Result" << result << endl;
+  }while(result != 0 && result != 1);
 }
