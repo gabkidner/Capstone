@@ -1,5 +1,6 @@
 #ifndef TILEGAME_H
 #define TILEGAME_H
+#include <iostream>
 using std::ostream;
 
 /*function for main:

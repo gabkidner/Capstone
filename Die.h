@@ -1,5 +1,7 @@
 #ifndef DIE_H
 #define DIE_H
+#include <ctime>
+#include <iostream>
 using std::endl;
 using std::ostream;
 using std::to_string;
@@ -14,7 +16,7 @@ Die die(sides, rolls);
 die.roll();
 system("cls");
 cout << die << endl;
- 
+
 */
 
 class Die{
