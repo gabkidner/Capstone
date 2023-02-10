@@ -4,34 +4,59 @@
 #include <sstream>
 #include <iostream>
 using std::ofstream;
+using std::ifstream;
 using std::string;
-
-//* = continue, | = reset, @ = press Enter to continue, % = broke cycle;
+using std::cout;
+using std::endl;
+using std::ios;
+//* = continue, | = reset, @ = press Enter to continue, % = broke;
 
 class ChooseAdventure{
   public:
-    ChooseAdventure(string);
-    void clearInventory();
+    void printStory();
     void reset();
+    void advancePhase(int);
   private:
-    string name;
     string storyOutput = "";
-    string phase = " ";
+    string phase = "s";
+    char result;
     bool breakLoop = false;
 };
 
-ChooseAdventure::ChooseAdventure(string input){
-  name = input;
-  ofstream fout;
-  fout.open("inventory.txt");
-  fout << "Please Work";
-  fout.close();
+void ChooseAdventure::printStory(){
+  string temp, phas;
+  ifstream fout("story.txt", ios::in);
+  while(phas != phase){
+    getline(fout, phas, ',');
+    getline(fout, storyOutput, '\n');
+  }
+  for(char i : storyOutput){
+    if(i == '*' || i == '@' || i == '|'){
+      result = i;
+    }
+    else if(i != '\\'){
+      cout << i;
+    }
+    else{
+      cout << endl;
+    }
+  }
+  cout << endl;
 }
 
 void ChooseAdventure::reset(){
-  ofstream fout;
-  fout.open("inventory.txt");
-  fout << "";
-  fout.close();
+  ofstream fin;
+  fin.open("inventory.txt");
+  fin << "";
+  fin.close();
+}
+
+void ChooseAdventure::advancePhase(int user){
+  switch(user){
+    case 1: phase += ".a"; break;
+    case 2: phase += ".b"; break;
+    case 3: phase += ".c"; break;
+  }
+  cout << phase << endl;
 }
 #endif

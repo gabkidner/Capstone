@@ -1,0 +1,54 @@
+@charset "utf-8";
+/*
+   NUAMES High School
+   Senior Capstone
+   
+   Base Stylesheet   
+
+   Date: 7-2-23
+   Filename: cs_base.css
+*/
+
+html{
+   background-color: #29367A;
+}
+
+header{
+   text-align: center;
+   background-color: #29367A;
+   padding-bottom: 10px;
+}
+
+header ul{
+   font-size: 20px;
+   list-style-type: none;
+   text-align: center;
+}
+
+header ul li{
+   display: inline;
+}
+
+nav ul li a {
+   color: white;
+}
+
+body{
+   width: 90%;
+   margin-left: auto;
+   margin-right: auto;
+   background-color: white;
+   font-family: 'Courier New', Courier, monospace;
+}
+
+h1, h2, h3{
+   text-align: center;
+}
+
+footer{
+   padding-top: 10px;
+   margin-top: 10px;
+   text-align: center;
+   background-color: #29367A;
+   color: white;
+}

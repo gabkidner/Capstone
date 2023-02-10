@@ -1,5 +1,4 @@
-#ifndef DIE_H
-#define DIE_H
+#pragma once
 #include <ctime>
 #include <iostream>
 using std::endl;
@@ -45,6 +44,10 @@ void Die::roll(){
     temp = rand() % sides + 1;
     total += temp;
     string temper = to_string(temp);
+    result += "Roll ";
+    int a = i + 1;
+    result += a;
+    result += ": ";
     result += temper;
     result += '\n';
   }
@@ -54,7 +57,7 @@ ostream &operator << (ostream &out, const Die &die){
   string thing = "";
   string number = "";
   if(die.sides == 2){
-    out << "You flipped a coin ";
+    out << "You flipped a die ";
     thing += "flipped";
   }
   else{
@@ -73,4 +76,3 @@ ostream &operator << (ostream &out, const Die &die){
   out << die.result << "The total of these number(s) is " << die.total << endl;
   return out;
 }
-#endif

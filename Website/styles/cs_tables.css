@@ -1,0 +1,32 @@
+@charset "utf-8";
+/*
+   NUAMES High School
+   Senior Capstone
+   
+   Base Stylesheet   
+
+   Date: 9-2-23
+   Filename: cs_base.css
+*/
+
+table{
+    width: 70%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 5%;
+    border-collapse: collapse;
+    border: solid 5px #29367A;
+    background-color: rgb(189, 188, 188);
+}
+
+table th{
+    background-color: rgb(84, 84, 84);
+    color: white;
+}
+
+table th, table td{
+    padding: 5px;
+    width: 50%;
+    text-align: center;
+    border: solid 2px #29367A;
+}

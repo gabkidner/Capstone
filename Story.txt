@@ -1,35 +1,35 @@
- ,You wake up in your bedroom on a beautiful Monday morning ready to seize the day!\nDo you: 1. Go to the kitchen 2. Go to the bathroom\n3. Stay in your room~
-a,You go to the kitchen to eat breakfast and your options are:\n1. Your favorite cereal\n2. Eggs and Bacon\n3. The flowers from the garden~
-b,You go into the bathroom and: \n1. go the bathroom\n2. Shower\n3. Vomit in the sink~
-c,You lay back down and wake up four hours later extremely hungry you can\n1. Go to the kitchen\n2. Stay in your room.~
-a.a, You make your cereal eat it and then head of to work\nPress Enter to continue...@While at work the boss slams a massive stack of papers on your desk and says "I need all of these done by Thursday"\nYou...\n1. Do the paper work now\n2. set aside the paperwork and work on something else\n3. Yell at your boss~
-a.b, You make your eggs and bacon but when you eat it you realize you accidently left egg shells in the food and you end up dying do to internal damage~|
-a.c, You go outside to the garden pick up some flowers and down them in an instant\nPress Enter continue...~* @Your neighbor saw you eating flowers and called the police and while at work the police arrest you to take you to a mental hospital\nDo You..\n1. Try to run\n2. Attack the police\n3. Accept it~*
-b.a,After releiving yourself you go to the kitchen to get some food\nYour choices are:\n1. Your favorite cereal\n2. Eggs and Bacon\n3. The flowers from the garden~*
-b.b,You get in the shower and doze off a few hours later the police find your body and you are buried in the local cemetery~|
-b.c,You vomit in the sink and think it's because of the sushi you had at 2:00 AM that morning.\nYou...\n1. Call in sick\n2. Go to work regardless~*
-c.a,You go to the kitchen and look for some food and you selections are:\n1. 1 day old McDonalds\n2. Sausages\n3. Nothing~*
-c.b,You lay back down and wake up 10 hours later and you are so hungry you fell like your stomach is starting to eat itself you can\n1. Go to the kitchen\n2. Stay in your room~*
-a.a.a,You start doing the paperwork and when you hit the halfway point you see a paper that looks like a letter and it has your name written in your hand writting.\nDo You\n1. Read it\n2. Throw it away~*
-a.a.b,You ignore the paperwork for now finish up your normal work and go back you\nWhen you get home you crash onto your bed and go to sleep~%
-a.a.c,You start calling your boss out for never doing any work and not respecting you\nPress Enter to continue...@He fires you on the spot and sends you home, when you get home you eat the tub of ice cream in the freezer and pass out~|
-a.c.a,You start running for the elevator but one of the officers has quick reflexes and shoots you in the leg\nPress Enter to continue...@You get sent to jail for resisting arrest and when you get to your cell you lay down and go to sleep~|
-a.c.b,Before they get cuffs on you, you grab one of their guns and shoot the one trying to arrest you\nPress Enter to continue...@His partner who was a newbie was to stunned to do anything so you run out of the building you head to\n1. Your home\n2. Your Ex's house\n3. Canada~*
-a.c.c,You end up getting sent to a menta faciluty and at the end of the day you go are so tired you fall asleep before your head hits the pillow.~|
-b.a.a,You make your cereal eat it and then head of to work\nPress Enter to continue...@You get to work late because of all the traffic and your boss is furious\n"IF YOU'RE LATE ONE MORE TIME THIS MONTH YOUR FIRED" he yelled, you can\n1. Ignore the yelling\n2. Yell back\n3. Attack your boss~*
-b.a.b,You make your eggs and bacon but when you eat it you realize you accidently left egg shells in the food and you end up dying do to internal damage~|
-b.a.c,You go out to the garden grab some flowers and gulp them down in a matter of seconds\nYou think they taste a little funny so you look down and see that you accidently ate your poisonus flowers not your eating flowers.\nYou start choking and after a few seconds fall down dead on the ground~|
-b.c.a,You call your boss and he gives you the day off so you look around for something to do your options are:\n1. Watch TV\n2. Go to the doctor's\n3. Make yourself some soup~*
-b.c.b,You get to work and feel even worse then earlier but you push through anyway.\nYou feel the need to vomit again halfway through you see three possible options\n1. Vomit on your desk\n2. Vomit in your trash can\n3. Try to make it to the bathroom.
-c.a.a,You think to yourself "I got this McDonalds yesterday it should still be good."\nYou pull it out and start chowing down but then you feel sick to your stomach\nYou start throwing up and after about 3 hours of this you die from a mix of starvation and food poisoning.~|
-c.a.b,You make some sausage, eat them, and you think that they taste like the best sausage you've ever made.\nYou can\n1. go to bed\n2. Watch some TV\n~*
-c.a.c,You don't eat anything and go back to your room do you\n1. go back to bed\n2. read\n~*
-c.b.a,You go to the kitchen and look for some food and you selections are:\n1. 1 day old McDonalds\n2. Sausages\n3. Nothing~*
-c.b.b,You go back to bed and pass away because you haven't eaten in 10 days.~|
-a.a.a.a,You open the envelope and look at the letter. The only contents of this letter are the word, "Your stuck in a loop, You need to break out"\nYou can\n1. Toss away the letter\n2. Call the Police\n3. keep it to yourself~*
-a.a.a.b,You throw the letter in your trash can and get on with the paper work.\nYou end up finishing by the end of the work day and head home.\nWhen you get home you crash onto your bed and fall asleep\n~|
-a.c.b.a,You run home and hid in the basment.\nWhen the police get there they break down the door but don't see you in the dark basment.\nYou can\n1. Try to sneak out\n2. Shoot the cop and run\n~*
-a.c.b.b,You run to your old spouse's house and expain your situation suprisingly they're fine with it and let you in. When the police inevitably arrive at the house you hid in the basement and wait for them to leave.\nAfter a couple minutes the police break into the basment and try to arrest you.\nYou can:\n1. Run\n2. Shoot\n3. Accept it\n~*
-a.c.b.c,You get a cab to the Canadian border and manage to get across the border.\nYou then hid out in an igloo the rest of the day and end up passing out because you were so tired.~|
-b.a.a.a,After your boss walks away you get to work.\nAfter your shift you head home and go to bed\n~|
-b.a.a.b,
+s,You wake up in your bedroom on a beautiful Monday morning ready to seize the day!\Do you: \1. Go to the kitchen \2. Go to the bathroom\3. Stay in your room*
+s.a,You go to the kitchen to eat breakfast and your options are:\1. Your favorite cereal\2. Eggs and Bacon\3. The flowers from the garden*
+s.b,You go into the bathroom and: \1. go the bathroom\2. Shower\3. Vomit in the sink*
+s.c,You lay back down and wake up four hours later extremely hungry you can\1. Go to the kitchen\2. Stay in your room.
+s.a.a,You make your cereal eat it and then head of to work\Press Enter to continue...@While at work the boss slams a massive stack of papers on your desk and says "I need all of these done by Thursday"\You...\1. Do the paper work now\2. set aside the paperwork and work on something else\3. Yell at your boss
+s.a.b,You make your eggs and bacon but when you eat it you realize you accidently left egg shells in the food and you end up dying do to internal damage
+s.a.c,You go outside to the garden pick up some flowers and down them in an instant\Press Enter continue... @Your neighbor saw you eating flowers and called the police and while at work the police arrest you to take you to a mental hospital\Do You..\1. Try to run\2. Attack the police\3. Accept it
+s.b.a,After releiving yourself you go to the kitchen to get some food\Your choices are:\1. Your favorite cereal\2. Eggs and Bacon\3. The flowers from the garden
+s.b.b,You get in the shower and doze off a few hours later the police find your body and you are buried in the local cemetery
+s.b.c,You vomit in the sink and think it's because of the sushi you had at 2:00 AM that morning.\You...\1. Call in sick\2. Go to work regardless
+s.c.a,You go to the kitchen and look for some food and you selections are:\1. 1 day old McDonalds\2. Sausages\3. Nothing
+s.c.b,You lay back down and wake up 10 hours later and you are so hungry you fell like your stomach is starting to eat itself you can\1. Go to the kitchen\2. Stay in your room
+s.a.a.a,You start doing the paperwork and when you hit the halfway point you see a paper that looks like a letter and it has your name written in your hand writting.\Do You\1. Read it\2. Throw it away
+s.a.a.b,You ignore the paperwork for now finish up your normal work and go back you\When you get home you crash onto your bed and go to sleep%
+s.a.a.c,You start calling your boss out for never doing any work and not respecting you\Press Enter to continue...@He fires you on the spot and sends you home, when you get home you eat the tub of ice cream in the freezer and pass out
+s.a.c.a,You start running for the elevator but one of the officers has quick reflexes and shoots you in the leg\Press Enter to continue...@You get sent to jail for resisting arrest and when you get to your cell you lay down and go to sleep
+s.a.c.b,Before they get cuffs on you, you grab one of their guns and shoot the one trying to arrest you\Press Enter to continue...@His partner who was a newbie was to stunned to do anything so you run out of the building you head to\1. Your home\2. Your Ex's house\3. Canada
+s.a.c.c,You end up getting sent to a menta faciluty and at the end of the day you go are so tired you fall asleep before your head hits the pillow.
+s.b.a.a,You make your cereal eat it and then head of to work\Press Enter to continue...@You get to work late because of all the traffic and your boss is furious\"IF YOU'RE LATE ONE MORE TIME THIS MONTH YOUR FIRED" he yelled, you can\1. Ignore the yelling\2. Yell back\3. Attack your boss
+s.b.a.b,You make your eggs and bacon but when you eat it you realize you accidently left egg shells in the food and you end up dying do to internal damage
+s.b.a.c,You go out to the garden grab some flowers and gulp them down in a matter of seconds\You think they taste a little funny so you look down and see that you accidently ate your poisonus flowers not your eating flowers.\You start choking and after a few seconds fall down dead on the ground
+s.b.c.a,You call your boss and he gives you the day off so you look around for something to do your options are:\1. Watch TV\2. Go to the doctor's\3. Make yourself some soup
+s.b.c.b,You get to work and feel even worse then earlier but you push through anyway.\You feel the need to vomit again halfway through you see three possible options\1. Vomit on your desk\2. Vomit in your trash can\3. Try to make it to the bathroom.
+s.c.a.a,You think to yourself "I got this McDonalds yesterday it should still be good."\You pull it out and start chowing down but then you feel sick to your stomach\You start throwing up and after about 3 hours of this you die from a mix of starvation and food poisoning.
+s.c.a.b,You make some sausage, eat them, and you think that they taste like the best sausage you've ever made.\You can\1. go to bed\2. Watch some TV\
+s.c.a.c,You don't eat anything and go back to your room do you\1. go back to bed\2. read\
+s.c.b.a,You go to the kitchen and look for some food and you selections are:\1. 1 day old McDonalds\2. Sausages\3. Nothing
+s.c.b.b,You go back to bed and pass away because you haven't eaten in 10 days.
+s.a.a.a.a,You open the envelope and look at the letter. The only contents of this letter are the word, "Your stuck in a loop, You need to break out"\You can\1. Toss away the letter\2. Call the Police\3. keep it to yourself
+s.a.a.a.b,You throw the letter in your trash can and get on with the paper work.\You end up finishing by the end of the work day and head home.\When you get home you crash onto your bed and fall asleep\
+s.a.c.b.a,You run home and hid in the basment.\When the police get there they break down the door but don't see you in the dark basment.\You can\1. Try to sneak out\2. Shoot the cop and run\
+s.a.c.b.b,You run to your old spouse's house and expain your situation suprisingly they're fine with it and let you in. When the police inevitably arrive at the house you hid in the basement and wait for them to leave.\After a couple minutes the police break into the basment and try to arrest you.\You can:\1. Run\2. Shoot\3. Accept it\
+s.a.c.b.c,You get a cab to the Canadian border and manage to get across the border.\You then hid out in an igloo the rest of the day and end up passing out because you were so tired.
+s.b.a.a.a,After your boss walks away you get to work.\After your shift you head home and go to bed\
+s.b.a.a.b,
