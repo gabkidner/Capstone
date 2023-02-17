@@ -2,6 +2,23 @@
 using std::cout;
 using std::endl;
 
+/*Function
+GuessNumber game;
+int user, result;
+do{
+  cin >> user;
+  result = game.result(user);
+  game.add(user);
+  if(result == 3){
+    cout << "Lower" << endl;
+  }
+  else if(result == 2){
+    cout << "Higher" << endl;
+  }
+  cout << "Result" << result << endl;
+}while(result != 0 && result != 1);
+*/
+
 class GuessNumber{
   public:
     GuessNumber();

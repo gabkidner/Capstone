@@ -4,7 +4,6 @@
 using std::ostream;
 
 /*function for main:
-cout << "Explain" << endl;
 TileGame game;
 int choice, chances = 0;
 do{
@@ -15,6 +14,7 @@ do{
     case 1: game.moveRight(); break;
     case 2: game.moveLeft(); break;
     case 3: game.swap(); break;
+    case 4: cout << rules; break;
   }
   chances++;
 }while(!game.inOrder() && choice > 0 && chances < 50);

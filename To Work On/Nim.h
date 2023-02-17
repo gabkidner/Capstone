@@ -2,6 +2,30 @@
 #include <ostream>
 using std::string;
 
+/*Function
+int choice, bad = 2;
+Nim game;
+cout << "Work on intro."
+while(!game.win()){
+  do{
+    system("cls");
+    if(bad = 0){
+      cout << "Invalid" << endl;
+      bad = 1;
+    }
+    cout << game;
+    cin >> choice;
+    if(game.isValid(choice)){
+      break;
+    }
+    else{
+      bad = 0;
+    }
+  }while(!game.isValid(choice));
+  game.take(choice);
+}
+*/
+
 class Nim{
   public:
     Nim();

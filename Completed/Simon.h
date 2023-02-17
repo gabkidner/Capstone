@@ -4,6 +4,26 @@ using std::ostream;
 using std::endl;
 using std::cout;
 
+/*Function
+int game = 0;
+string choice;
+Simon s;
+do{
+  int loop = 50;
+  if(game != 0){
+    s.newPattern();
+  }
+  while(loop != 0){
+    system("cls");
+    cout << s;
+    loop--;
+  }
+  system("cls");
+  cin >> choice;
+  game++;
+}while(!s.done(choice));
+*/
+
 class Simon{
   public:
     Simon();

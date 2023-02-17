@@ -5,6 +5,7 @@ using std::endl;
 using std::ostream;
 using std::to_string;
 using std::string;
+using std::cout;
 /* function for main
 int sides, rolls;
 cout << "How many sides should this die/coin have?\n";
@@ -45,7 +46,7 @@ void Die::roll(){
     total += temp;
     string temper = to_string(temp);
     result += "Roll ";
-    int a = i + 1;
+    int a = i + 49;
     result += a;
     result += ": ";
     result += temper;

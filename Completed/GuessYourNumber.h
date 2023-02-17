@@ -2,6 +2,20 @@
 using std::cout;
 using std::endl;
 
+/*Function
+GuessYourNumber game;
+string user;
+int result;
+do{
+  game.guessing();
+  cout << game;
+  cin >> user;
+  game.editGuess(user);
+  result = game.complete(user);
+  cout << result << endl;
+}while(result == 0);
+*/
+
 class GuessYourNumber{
   public:
     GuessYourNumber();

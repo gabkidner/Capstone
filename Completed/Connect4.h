@@ -3,6 +3,26 @@ using std::ostream;
 using std::endl;
 using std::cout;
 
+/*Function for main
+int choice;
+Connect4 c4;
+cin >> choice;
+while(!c4.won()){
+  c4.switchPlayer();
+  system("cls");
+  cout << "\n" << c4 << "\n\n" << c4.getPlayer() << "\'s turn"<< endl;
+  cin >> choice;
+  while(choice > 7){
+    cout << "That is an invalid move try again!" << endl;
+    cin >> choice;
+    system("cls");
+    cout << c4 << "\n" << c4.getPlayer() << "\'s turn"<< endl;
+  }
+  c4.place(choice);
+}
+system("cls");
+cout << c4;
+*/
 enum {R = 'R', Y = 'Y'};
 
 class Connect4{

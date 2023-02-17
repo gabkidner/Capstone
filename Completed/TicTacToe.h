@@ -2,6 +2,18 @@
 using std::cout;
 using std::endl;
 
+/*Function for main
+char choice;
+TicTacToe tic;
+while(!tic.won()){
+  tic.switchPlayer();
+  system("cls");
+  cout << tic;
+  cin >> choice;
+  tic.place(choice);
+}
+*/
+
 enum {X = 'X', O = 'O'};
 
 class TicTacToe{
