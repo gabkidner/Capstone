@@ -2,6 +2,7 @@
 #define CHOOSEADVENTURE_H
 #include <fstream>
 #include <sstream>
+#include <conio.h>
 #include <iostream>
 using std::ofstream;
 using std::ifstream;
@@ -13,10 +14,11 @@ using std::ios;
 
 class ChooseAdventure{
   public:
-    void printStory();
+    int printStory();
     void reset();
-    void advancePhase(int);
+    void advancePhase(char);
     bool stop();
+    void pressEnter();
   private:
     string storyOutput = "";
     string phase = "s";
@@ -24,7 +26,7 @@ class ChooseAdventure{
     bool breakLoop = false;
 };
 
-void ChooseAdventure::printStory(){
+int ChooseAdventure::printStory(){
   string temp, phas;
   ifstream fout("story.txt", ios::in);
   while(phas != phase){
@@ -32,17 +34,20 @@ void ChooseAdventure::printStory(){
     getline(fout, storyOutput, '\n');
   }
   for(char i : storyOutput){
-    if(i == '*' || i == '@'){
+    if(i == '*'){
       result = i;
+    }
+    else if(i == '@'){
+      pressEnter();
     }
     else if(i == '|'){
       reset();
-      cout << "\nType 10 and press Enter\n";
+      pressEnter();
+      return 0;
     }
     else if(i == '%'){
       cout << "\nType 10 and press Enter\n";
       breakLoop = true;
-      return;
     }
     else if(i != '\\'){
       cout << i;
@@ -52,6 +57,7 @@ void ChooseAdventure::printStory(){
     }
   }
   cout << endl;
+  return 1;
 }
 
 void ChooseAdventure::reset(){
@@ -62,15 +68,15 @@ void ChooseAdventure::reset(){
   fin.close();
 }
 
-void ChooseAdventure::advancePhase(int user){
+void ChooseAdventure::advancePhase(char user){
   if(breakLoop){
     return;
   }
   switch(user){
-    case 1: phase += ".a"; break;
-    case 2: phase += ".b"; break;
-    case 3: phase += ".c"; break;
-    case 10: break;
+    case '1': phase += ".a"; break;
+    case '2': phase += ".b"; break;
+    case '3': phase += ".c"; break;
+    case '0': break;
   }
   cout << phase << endl;
 }
@@ -80,5 +86,13 @@ bool ChooseAdventure::stop(){
     return true;
   }
   return false;
+}
+
+void ChooseAdventure::pressEnter(){
+  cout << "\nPress Enter to Continue..." << endl;
+  int user = 0;
+  while(user != 13){
+    user = getch();
+  }
 }
 #endif

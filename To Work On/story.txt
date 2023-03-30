@@ -1,6 +1,6 @@
 s,You wake up in your bedroom on a beautiful Monday morning ready to seize the day!\Do you: \1. Go to the kitchen \2. Go to the bathroom\3. Stay in your room
 s.a,You go to the kitchen to eat breakfast and your options are:\1. Your favorite cereal\2. Eggs and Bacon\3. The flowers from the garden
-s.b,You go into the bathroom and: \1. go the bathroom\2. Shower\3. Vomit in the sink
+s.b,You go into the bathroom and: \1. Go the bathroom\2. Shower\3. Vomit in the sink
 s.c,You lay back down and wake up four hours later extremely hungry you can\1. Go to the kitchen\2. Stay in your room.
 s.a.a,You make your cereal eat it and then head of to work\Press Enter to continue...@While at work the boss slams a massive stack of papers on your desk and says "I need all of these done by Thursday"\You...\1. Do the paper work now\2. set aside the paperwork and work on something else\3. Yell at your boss
 s.a.b,You make your eggs and bacon but when you eat it you realize you accidently left egg shells in the food and you end up dying due to internal bleeding|
@@ -29,7 +29,9 @@ s.c.b.b,You go back to bed and pass away because you haven't eaten in 10 days.|
 s.a.a.a.a,You open the envelope and look at the letter. The only contents of this letter are the words\, "Your stuck in a loop, You need to break out"\You can\1. Toss away the letter\2. Call the Police\3. keep it to yourself
 s.a.a.a.b,You throw the letter in your trash can and get on with the paper work.\You end up finishing by the end of the work day and head home.\When you get home you crash onto your bed and fall asleep%
 s.a.c.b.a,You run home and hid in the basment.\When the police get there they break down the door but don't see you in the dark basment.\You can\1. Try to sneak out\2. Shoot the cop and run\
-s.a.c.b.b,You run to your old spouse's house and expain your situation suprisingly they're fine with it and let you in. When the police inevitably arrive at the house you hid in the basement and wait for them to leave.\After a couple minutes the police break into the basment and try to arrest you.\You can:\1. Run\2. Shoot\3. Accept it\
+s.a.c.b.b,You run to your old spouse's house and expain your situation suprisingly they're fine with it and let you in. When the police inevitably arrive at the house you hid in the basement and wait for them to leave.\After a couple minutes the police break into the basement and try to arrest you.\You can:\1. Run\2. Shoot\3. Accept it\
 s.a.c.b.c,You get a cab to the Canadian border and manage to get across the border.\You then hid out in an igloo the rest of the day and end up passing out because you were so tired.
 s.b.a.a.a,After your boss walks away you get to work.\After your shift you head home and go to bed|
-s.b.a.a.b,
+s.b.a.a.b,"At LEAST I'M NOT MASSIVE LIKE YOU!", you shout. Your boss proceeds to\promptly fire you on the spot and kicks you out of the building.@The only problem with that is you work on the tenth floor of the office building.\nAfter being throw out you crash onto the pavement below and die.|
+s.b.a.a.c,You lunge at your boss and bite at his neck.\However your boss is much stronger than you and he punches you and knocks you out.|
+s.b.c.a.a,You open Notflix and start looking for something to watch.\
