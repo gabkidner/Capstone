@@ -1,4 +1,6 @@
 #pragma once
+#include <iostream>
+#include <conio.h>
 using std::ostream;
 using std::endl;
 using std::cout;
@@ -32,6 +34,7 @@ class Connect4{
     void switchPlayer();
     bool won();
     char getPlayer();
+    void pressEnter();
     friend ostream &operator <<(ostream&, const Connect4 &);
   private:
     char grid[6][7] = {

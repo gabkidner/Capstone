@@ -1,11 +1,8 @@
-#include "TwentyFortyEight.h"
-#include <conio.h>
+#include "Twenty48.h"
+//#include <conio.h>
 #include <iostream>
 using namespace std;
 
-//Figure out Press Enter to Continue
-
-main(){
-  TwentyFortyEight twenty;
-  cout << twenty;
+main(){   //Print, solve and show the maze
+  Twenty48 t;
 }

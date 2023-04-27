@@ -1,5 +1,6 @@
 #pragma once
 #include <iomanip>
+#include <iostream>
 using std::ostream;
 using std::endl;
 using std::cout;
