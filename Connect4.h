@@ -62,18 +62,20 @@ void Connect4::switchPlayer(){
 }
 
 void Connect4::place(int c){
-  bool done = false;
-  c--;
-  for(int r = 5; r >= 0; r--){
-    if(grid[r][c] == ' ' && !done){
-      grid[r][c] = color;
-      done = true;
+  if(c > 0 && c < 8){
+    bool done = false;
+    c--;
+    for(int r = 5; r >= 0; r--){
+      if(grid[r][c] == ' ' && !done){
+        grid[r][c] = color;
+        done = true;
+      }
     }
   }
-
 }
 
 ostream &operator <<(ostream & out, const Connect4 &game){
+  system("cls");
   out << "  1 | 2 | 3 | 4 | 5 | 6 | 7\n +-+-+-+-+-+-+-+-+-+-+-+-+-+\n  ";
   for(int r = 0; r < 6; r++){
     for(int c = 0; c < 7; c++){
