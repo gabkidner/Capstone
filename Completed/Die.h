@@ -46,8 +46,8 @@ void Die::roll(){
     total += temp;
     string temper = to_string(temp);
     result += "Roll ";
-    int a = i + 49;
-    result += a;
+    int outcome = i+1;
+    result += to_string(outcome);
     result += ": ";
     result += temper;
     result += '\n';
