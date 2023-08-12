@@ -2,12 +2,11 @@
 #include <iostream>
 using namespace std;
 
-main(){   //Print, solve and show the maze
+int main(){   //Print, solve and show the maze
   GuessNumber game;
   int user, result;
   cout << "Welcome to Guess My Number where your pitiful human mind\nmust guess what number I am thinking of in 15 tries or less.\n\nType you're first guess" << endl;
   do{
-    cout << game.getNumber();
     cin >> user;
     result = game.result(user);
     game.add(user);
@@ -26,4 +25,5 @@ main(){   //Print, solve and show the maze
     cin >> user;
     system("clear");
   }
+  return 0;
 }
