@@ -7,14 +7,19 @@ void die();
 main(){
   string temp;
   int input;
-  cout << "Welcome to my Capstone Project\n[Blank] games in one\nMade by Gabe Kidner\n" << endl;
-  cout << "Select Game and Press Enter\n0 - Exit\n1 - Dice" << endl << endl;
+  cout << "Welcome to my Capstone Project\n[Blank] games in one\n" << endl;
+  do{
+    system("cls");
+    cout << "Select Game and Press Enter\n0 - Exit\n1 - Dice" << endl << endl;
+    cin >> input;
+    switch(input){
+      case 0: break;
+      case 1: die(); break;
+    }
+  }while(input != 0);
+  system("cls");
+  cout << "\nMade by Gabe Kidner.\n\nPress enter to close\n";
   cin >> input;
-  system("clear");
-  switch(input){
-    case 0: return 0; break;
-    case 1: die(); break;
-  }
 }
 
 void die(){
@@ -25,6 +30,6 @@ void die(){
   cin >> rolls;
   Die die(sides, rolls);
   die.roll();
-  system("clear");
+  system("cls");
   cout << die << endl;
 }
