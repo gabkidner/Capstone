@@ -1,9 +1,10 @@
 #pragma once
 #include <ctime>
+#include <bitset>
 #include <iostream>
+using std::bitset;
 using std::endl;
 using std::ostream;
-using std::to_string;
 using std::string;
 using std::cout;
 /* function for main

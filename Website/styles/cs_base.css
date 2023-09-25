@@ -41,6 +41,13 @@ body{
    font-family: 'Courier New', Courier, monospace;
 }
 
+p{
+   width: 70%;
+   margin-left: auto;
+   margin-right: auto;
+   font-family: 'Courier New', Courier, monospace;
+}
+
 h1, h2, h3{
    text-align: center;
 }
@@ -51,4 +58,10 @@ footer{
    text-align: center;
    background-color: #29367A;
    color: white;
+}
+
+article{
+   width: 80%;
+   margin-left: auto;
+   margin-right: auto;
 }
