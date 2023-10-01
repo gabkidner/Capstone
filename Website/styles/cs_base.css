@@ -52,6 +52,23 @@ h1, h2, h3{
    text-align: center;
 }
 
+header>h1{
+   color: white;
+   font-size: 7em;
+   margin-bottom: 0px;
+}
+
+h2{
+   margin-top: 0px;
+   color: white;
+   font-size: 3em;
+}
+
+a#name{
+   color: white;
+   text-decoration: none;
+}
+
 footer{
    padding-top: 10px;
    margin-top: 10px;
