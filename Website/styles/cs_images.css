@@ -1,0 +1,16 @@
+@charset "utf-8";
+/*
+   NUAMES High School
+   Senior Capstone
+   
+   Base Stylesheet   
+
+   Date: 7-2-23
+   Filename: cs_base.css
+*/
+
+image#nshss{
+    display: block;
+    width: 1px;
+    height: 10%;
+}
