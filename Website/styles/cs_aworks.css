@@ -9,6 +9,7 @@
    Filename: cs_base.css
 */
 article dl dt{
+   font-family: 'Courier New', Courier, monospace;
    padding-left: 10px;
    text-decoration: underline;
    font-size: 1.5em;

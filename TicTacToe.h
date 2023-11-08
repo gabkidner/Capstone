@@ -1,6 +1,7 @@
 #pragma once
+#include <iostream>
+using std::ostream;
 using std::cout;
-using std::endl;
 
 /*Function for main
 char choice;
@@ -21,7 +22,7 @@ class TicTacToe{
     TicTacToe();
     void switchPlayer();
     void place(char);
-    bool won();
+    int won();
     char get();
     friend ostream &operator <<(ostream&, const TicTacToe &);
   private:
@@ -57,24 +58,37 @@ void TicTacToe::place(char choice){
   }
 }
 
-bool TicTacToe::won(){
+int TicTacToe::won(){
   for(int r = 0; r < 3; r++){
     if(grid[r][0] == player && grid[r][1] == player && grid[r][2] == player){
-      return true;
+      return 1;
     }
   }
   for(int c = 0; c < 3; c++){
     if(grid[0][c] == player && grid[1][c] == player && grid[2][c] == player){
-      return true;
+      return 1;
     }
   }
   if(grid[0][0] == player && grid[1][1] == player && grid[2][2] == player){
-    return true;
+    return 1;
   }
   if(grid[0][2] == player && grid[1][1] == player && grid[2][0] == player){
-    return true;
+    return 1;
   }
-  return false;
+  char loop = '1';
+  int filled = 0;
+  for(int r = 0; r < 3; r++){
+    for(int c = 0; c < 3; c++){
+      if(grid[r][c] != loop){
+        filled++;
+      }
+      loop++;
+    }
+  }
+  if(filled == 9){
+    return 2;
+  }
+  return 0;
 }
 
 char TicTacToe::get(){
