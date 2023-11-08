@@ -52,10 +52,12 @@ void TicTacToe::place(char choice){
     for(int c = 0; c < 3; c++){
       if(grid[r][c] == choice){
         grid[r][c] = player;
-        break;
+        return;
       }
     }
   }
+  cout << "Invalid Move";
+  switchPlayer();
 }
 
 int TicTacToe::won(){

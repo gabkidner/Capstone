@@ -18,7 +18,6 @@ main(){
     choiceChar = choiceInt + 48;
     tic.place(choiceChar);
   }
-  system("cls");
   cout << tic << endl;
   if(tic.won() == 1){
     cout << tic.get() << "'s win";

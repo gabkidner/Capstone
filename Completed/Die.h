@@ -7,6 +7,7 @@ using std::endl;
 using std::ostream;
 using std::string;
 using std::cout;
+using std::to_string;
 /* function for main
 int sides, rolls;
 cout << "How many sides should this die/coin have?\n";
