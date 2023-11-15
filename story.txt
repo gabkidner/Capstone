@@ -8,7 +8,7 @@ s.a.c,You go outside to the garden pick up some flowers and down them in an inst
 s.b.a,After relieving yourself you go to the kitchen to get some food\Your choices are:\1. Your favorite cereal\2. Eggs and Bacon\3. The flowers from the garden
 s.b.b,You get in the shower and doze off a few hours later the police find your body and you are buried in the local cemetery%
 s.b.c,You vomit in the sink and think it's because of the sushi you had at 2:00 AM that morning.\You...\1. Call in sick\2. Go to work regardless
-s.c.a,You go to the kitchen and look for some food and you selections are:\1. 1 day old McDonalds\2. Sausages\3. Nothing
+s.c.a,You go to the kitchen and look for some food and you selections are:\1. 1 day old McDons\2. Sausages\3. Nothing
 s.c.b,You lay back down and wake up 10 hours later and you are so hungry you fell like your stomach is starting to eat itself you can\1. Go to the kitchen\2. Stay in your room
 s.a.a.a,You start doing the paperwork and when you hit the halfway point you see a paper that looks like a letter and it has your name written in your hand writting.\Do You\1. Read it\2. Throw it away
 s.a.a.b,You ignore the paperwork for now finish up your normal work and go back you\When you get home you crash onto your bed and go to sleep%
@@ -21,17 +21,20 @@ s.b.a.b,You make your eggs and bacon but when you eat it you realize you acciden
 s.b.a.c,You go out to the garden grab some flowers and gulp them down in a matter of seconds\You think they taste a little funny so you look down and see that you accidently ate your poisonus flowers not your eating flowers.\You start choking and after a few seconds fall down dead on the ground|
 s.b.c.a,You call your boss and he gives you the day off so you look around for something to do your options are:\1. Watch TV\2. Go to the doctor's\3. Make yourself some soup
 s.b.c.b,You get to work and feel even worse then earlier but you push through anyway.\You feel the need to vomit again halfway through you see three possible options\1. Vomit on your desk\2. Vomit in your trash can\3. Try to make it to the bathroom.
-s.c.a.a,You think to yourself "I got this McDonalds yesterday it should still be good."\You pull it out and start chowing down but then you feel sick to your stomach\You start throwing up and after about 3 hours of this you die from a mix of starvation and food poisoning.|
+s.c.a.a,You think to yourself "I got this McDons yesterday it should still be good."\You pull it out and start chowing down but then you feel sick to your stomach\You start throwing up and after about 3 hours of this you die from a mix of starvation and food poisoning.|
 s.c.a.b,You make some sausage, eat them, and you think that they taste like the best sausage you've ever made.\You can\1. go to bed\2. Watch some TV\
 s.c.a.c,You don't eat anything and go back to your room do you\1. go back to bed\2. read\
-s.c.b.a,You go to the kitchen and look for some food and you selections are:\1. 1 day old McDonalds\2. Sausages\3. Nothing
+s.c.b.a,You go to the kitchen and look for some food and you selections are:\1. 1 day old McDons\2. Sausages\3. Nothing
 s.c.b.b,You go back to bed and pass away because you haven't eaten in 10 days.|
 s.a.a.a.a,You open the envelope and look at the letter. The only contents of this letter are the words\, "Your stuck in a loop, You need to break out"\You can\1. Toss away the letter\2. Call the Police\3. keep it to yourself
 s.a.a.a.b,You throw the letter in your trash can and get on with the paper work.\You end up finishing by the end of the work day and head home.\When you get home you crash onto your bed and fall asleep%
-s.a.c.b.a,You run home and hid in the basment.\When the police get there they break down the door but don't see you in the dark basment.\You can\1. Try to sneak out\2. Shoot the cop and run\
+s.a.c.b.a,You run home and hid in the basment.\When the police get there they break down the door but don't see you in the dark basement.\You can\1. Try to sneak out\2. Shoot the cop and run\
 s.a.c.b.b,You run to your old spouse's house and expain your situation suprisingly they're fine with it and let you in. When the police inevitably arrive at the house you hid in the basement and wait for them to leave.\After a couple minutes the police break into the basement and try to arrest you.\You can:\1. Run\2. Shoot\3. Accept it\
 s.a.c.b.c,You get a cab to the Canadian border and manage to get across the border.\You then hid out in an igloo the rest of the day and end up passing out because you were so tired.
 s.b.a.a.a,After your boss walks away you get to work.\After your shift you head home and go to bed|
-s.b.a.a.b,"At LEAST I'M NOT MASSIVE LIKE YOU!", you shout. Your boss proceeds to\promptly fire you on the spot and kicks you out of the building.@The only problem with that is you work on the tenth floor of the office building.\nAfter being throw out you crash onto the pavement below and die.|
+s.b.a.a.b,"AT LEAST I'M NOT MASSIVE LIKE YOU!", you shout. Your boss proceeds to\promptly fire you on the spot and kicks you out of the building.@The only problem with that is you work on the tenth floor of the office building.\nAfter being throw out you crash onto the pavement below and die.|
 s.b.a.a.c,You lunge at your boss and bite at his neck.\However your boss is much stronger than you and he punches you and knocks you out.|
-s.b.c.a.a,You open Notflix and start looking for something to watch.\
+s.b.c.a.a,You open Notflix and start looking for something to watch.\1. Action\2. Comedy
+s.b.c.a.b,You go to the doctor's office and he informs you that you are in a coma and tells you to wake up.|
+s.b.c.a.c,You make the soup, sit down, and take the first sip\After you take the first sip you start feeling even worse and realize that\you accidently poisoned yourself and fall over dead.|
+s.b.c.
