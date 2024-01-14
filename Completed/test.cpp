@@ -11,7 +11,7 @@ main(){
   string temp;
   cout << "Welcome to my Capstone Project\n[Blank] games in one\n" << endl;
   do{
-    cout << "Select Game and Press Enter\n0 - Exit\n1 - Dice\n2 - Tic Tac Toe" << endl << endl;
+    cout << "\nSelect Game and Press Enter\n0 - Exit\n1 - Dice\n2 - Tic Tac Toe" << endl << endl;
     cin >> input;
     switch(input){
       case 0: break;

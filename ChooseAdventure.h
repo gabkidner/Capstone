@@ -32,6 +32,9 @@ int ChooseAdventure::printStory(){
   while(phas != phase){
     getline(fout, phas, ',');
     getline(fout, storyOutput, '\n');
+    if(phas == "exit"){
+      return 0;
+    }
   }
   for(char i : storyOutput){
     if(i == '*'){

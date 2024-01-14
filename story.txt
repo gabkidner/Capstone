@@ -37,4 +37,4 @@ s.b.a.a.c,You lunge at your boss and bite at his neck.\However your boss is much
 s.b.c.a.a,You open Notflix and start looking for something to watch.\1. Action\2. Comedy
 s.b.c.a.b,You go to the doctor's office and he informs you that you are in a coma and tells you to wake up.|
 s.b.c.a.c,You make the soup, sit down, and take the first sip\After you take the first sip you start feeling even worse and realize that\you accidently poisoned yourself and fall over dead.|
-s.b.c.
+exit,
