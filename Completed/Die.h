@@ -2,12 +2,14 @@
 #include <ctime>
 #include <bitset>
 #include <iostream>
+#include "C:\Users\gkidn\Downloads\ac0fe7d7450621a39364ed3b05cacd11-e1dc9b6c9221f1477d52bab918c9e8e34bb362f4\ac0fe7d7450621a39364ed3b05cacd11-e1dc9b6c9221f1477d52bab918c9e8e34bb362f4\stdc++.h";
 using std::bitset;
 using std::endl;
 using std::ostream;
 using std::string;
 using std::cout;
 using std::to_string;
+
 /* function for main
 int sides, rolls;
 cout << "How many sides should this die/coin have?\n";

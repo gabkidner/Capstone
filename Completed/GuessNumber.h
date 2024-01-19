@@ -25,12 +25,9 @@ class GuessNumber{
   public:
     GuessNumber();
     int result(int);
-    bool correct(int);
-    bool outOTries();
     int getNumber();
     int getRounds();
     void add(int);
-    int get();
   private:
     int number;
     int rounds;

@@ -1,6 +1,9 @@
 #pragma once
+#include <iostream>
 using std::cout;
 using std::endl;
+using std::ostream;
+using std::string;
 
 /*Function
 GuessYourNumber game;
@@ -22,6 +25,7 @@ class GuessYourNumber{
     void guessing();
     void editGuess(string);
     int complete(string);
+    int getTries();
     friend ostream &operator <<(ostream&, const GuessYourNumber &);
   private:
     int high;
@@ -39,9 +43,13 @@ GuessYourNumber::GuessYourNumber(){
 
 void GuessYourNumber::guessing(){
   srand(time(NULL));
-  cout << "High: " << high << " LoW: " << low << endl;
-  guess = rand() % high + low;
-  cout << "Guess" << guess;
+  guess = rand() % high;
+  if (guess < low) {
+      guess += low;
+  }
+  if (guess > high) {
+      guess = high;
+  }
 }
 
 void GuessYourNumber::editGuess(string response){
@@ -52,20 +60,24 @@ void GuessYourNumber::editGuess(string response){
     low = guess + 1;
   }
   tries++;
-  cout << "High: " << high << " LoW: " << low << endl;
 }
 
 int GuessYourNumber::complete(string response){
   if(response == "correct"){
-    return 1;
+      tries--;
+      return 1;
   }
-  else if(tries == 15){
+  else if(tries == 10){
     return 2;
   }
   return 0;
 }
 
+int GuessYourNumber::getTries() {
+    return tries;
+}
+
 ostream &operator <<(ostream & out, const GuessYourNumber &game){
-  out << "I guess " << game.guess << " am I high, low, or correct?" << endl;
+    out << "I guess " << game.guess << " am I high, low, or correct?" << endl;
   return out;
 }

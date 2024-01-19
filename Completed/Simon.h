@@ -2,7 +2,7 @@
 #include <iomanip>
 using std::ostream;
 using std::endl;
-using std::cout;
+using std::string;
 
 /*Function
 int game = 0;

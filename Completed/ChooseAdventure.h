@@ -93,9 +93,9 @@ bool ChooseAdventure::stop(){
 
 void ChooseAdventure::pressEnter(){
   cout << "\nPress Enter to Continue..." << endl;
-  int user = 0;
+  int user = 0; 
   while(user != 13){
-    user = getch();
+    user = _getch();
   }
 }
 #endif
