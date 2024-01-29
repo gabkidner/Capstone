@@ -81,7 +81,6 @@ void ChooseAdventure::advancePhase(char user){
     case '3': phase += ".c"; break;
     case '0': break;
   }
-  cout << phase << endl;
 }
 
 bool ChooseAdventure::stop(){

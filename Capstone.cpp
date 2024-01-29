@@ -6,6 +6,8 @@
 #include "Completed/GuessYourNumber.h"
 #include "Completed/Simon.h"
 #include "Completed/TileGame.h"
+#include "To Work On/Connect4.h"
+#include "To Work On/Nim.h"
 using namespace std;
 
 void die();
@@ -17,6 +19,8 @@ void playerguesses();
 void compGuess();
 void simon();
 void tile();
+void confour();
+void nim();
 
 int main() {
     int input;
@@ -58,7 +62,19 @@ void complete() {
 }
 
 void incomplete() {
-    cout << "Goodbye" << endl;
+    int input;
+    string temp;
+    do {
+        system("cls");
+        cout << "Select Game and Press Enter\n0 - Main Menu\n1 - Connect 4\n2 - Nim" << endl;
+        cin >> input;
+        switch (input) {
+        case 0: break;
+        case 1: confour(); break;
+        case 2: nim(); break;
+        }
+    } while (input != 0);
+    system("cls");
 }
 
 void die() {
@@ -84,11 +100,12 @@ void tictac() {
     int choiceInt;
     char choiceChar;
     TicTacToe tic;
+    cout << "When it is your turn type the number of the spot you want to place your symbol in and press enter." << endl;
     while (tic.won() == 0) {
         tic.switchPlayer();
-        system("cls");
         cout << tic << "\n" << tic.get() << "'s turn\n";
         cin >> choiceInt;
+        system("cls");
         while (choiceInt > 9) {
             cout << "Please enter a valid number\n";
             cin >> choiceInt;
@@ -102,6 +119,14 @@ void tictac() {
     }
     else {
         cout << "Neither of you won, you are equals" << endl;
+    }
+    do {
+        cout << "\n1-Try Again\n0-Main Menu" << endl;
+        cin >> choiceInt;
+        system("cls");
+    } while (choiceInt != 1 && choiceInt != 0);
+    if (choiceInt == 1) {
+        tictac();
     }
 }
 
@@ -145,6 +170,10 @@ void playerguesses(){
     cin >> user;
     while (user != 1 && user != 0){
         cout << "1 - Rematch\n2 - Exit" << endl; 
+        cin >> user;
+    }
+    if (user == 1) {
+        playerguesses();
     }
 }
 
@@ -250,4 +279,49 @@ void tile() {
     if (choice == 1) {
         tile();
     }
+}
+
+void confour(){
+    int choice;
+    Connect4 c4;
+    cin >> choice;
+    while (!c4.won()) {
+        c4.switchPlayer();
+        system("cls");
+        cout << "\n" << c4 << "\n\n" << c4.getPlayer() << "\'s turn" << endl;
+        cin >> choice;
+        while (choice > 7) {
+            cout << "That is an invalid move try again!" << endl;
+            cin >> choice;
+            system("cls");
+            cout << c4 << "\n" << c4.getPlayer() << "\'s turn" << endl;
+        }
+        c4.place(choice);
+    }
+    system("cls");
+    cout << c4;
+}
+
+void nim() {
+    int choice, bad = 2;
+    Nim game;
+    cout << "Work on intro.";
+        while (!game.win()) {
+            do {
+                system("cls");
+                if (bad == 0) {
+                    cout << "Invalid" << endl;
+                    bad = 1;
+                }
+                cout << game;
+                cin >> choice;
+                if (game.isValid(choice)) {
+                    break;
+                }
+                else {
+                    bad = 0;
+                }
+            } while (!game.isValid(choice));
+            game.take(choice);
+        }
 }
